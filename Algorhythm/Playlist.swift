@@ -29,6 +29,8 @@ struct Playlist {
         icon = UIImage(named: iconName)
         
         let largeIconName = playlistDictionary["largeIcon"] as! String!
+        largeIcon = UIImage(named: largeIconName)
+
     }
     
     func rgbColorFromDictionary(colorDictionary: [String: CGFloat]) -> UIColor {
